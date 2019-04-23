@@ -59,3 +59,10 @@ typings/
 
 # next.js build output
 .next
+
+# os files
+.DS_Store
+
+# project files
+dist
+.cache

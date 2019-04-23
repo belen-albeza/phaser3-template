@@ -1,0 +1,31 @@
+{
+  "name": "phaser3-template",
+  "version": "1.0.0",
+  "description": "A template for Phaser 3 projects, with ES6 and Parcel",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "start": "parcel src/index.html --open",
+    "clean": "rimraf -rf dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belen-albeza/phaser3-template.git"
+  },
+  "keywords": [
+    "phaser3",
+    "phaser",
+    "gamedev"
+  ],
+  "author": "Belén \"Benko\" Albeza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/belen-albeza/phaser3-template/issues"
+  },
+  "homepage": "https://github.com/belen-albeza/phaser3-template#readme",
+  "devDependencies": {
+    "parcel": "^1.12.3",
+    "rimraf": "^2.6.3"
+  }
+}
