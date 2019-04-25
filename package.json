@@ -4,6 +4,7 @@
   "description": "A template for Phaser 3 projects, with ES6 and Parcel",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src/**/*.js",
     "build": "parcel build src/index.html",
     "start": "parcel src/index.html --open",
     "clean": "rimraf -rf dist",
@@ -25,7 +26,17 @@
   },
   "homepage": "https://github.com/belen-albeza/phaser3-template#readme",
   "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
     "parcel": "^1.12.3",
     "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "phaser": "^3.16.2"
   }
 }
