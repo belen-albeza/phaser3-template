@@ -1,6 +1,7 @@
 import Phaser from 'phaser'
 
 import { SCREEN_WIDTH, SCREEN_HEIGHT } from './utils/constants'
+import LoadingScene from './scenes/loading-scene'
 import MainScene from './scenes/main-scene'
 
 const config = {
@@ -23,7 +24,7 @@ const config = {
       debug: false
     }
   },
-  scene: [MainScene]
+  scene: [LoadingScene, MainScene]
 }
 
 window.onload = () => {

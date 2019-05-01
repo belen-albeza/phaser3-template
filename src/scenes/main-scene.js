@@ -1,20 +1,18 @@
 import Phaser from 'phaser'
 
+import { SCREEN_WIDTH, SCREEN_HEIGHT } from '../utils/constants'
+
 class MainScene extends Phaser.Scene {
-  constructor () {
+  constructor() {
     super({ key: 'main' })
   }
 
-  preload () {
-    // load assets here
-  }
-
-  create () {
+  create() {
     // setup the game world
-    this.add.text(128, 64, 'Hello, phaser!').setOrigin(0.5)
+    this.add.image(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 'character')
   }
 
-  update () {
+  update() {
     // update the game world
   }
 }
